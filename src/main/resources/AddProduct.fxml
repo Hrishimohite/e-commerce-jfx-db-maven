@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.addproduct.AddProductController">
+   <children>
+      <AnchorPane prefHeight="437.0" prefWidth="600.0" style="-fx-background-color: whi #eae7e6te; -fx-border-color: #da9412; -fx-border-width: 10;">
+         <children>
+            <TextField fx:id="productPrice" layoutX="218.0" layoutY="154.0" prefHeight="29.0" prefWidth="269.0" style="-fx-border-color: orange;" />
+            <TextField fx:id="productQuantity" layoutX="218.0" layoutY="213.0" prefHeight="29.0" prefWidth="269.0" style="-fx-border-color: orange;" />
+            <Button layoutX="250.0" layoutY="288.0" mnemonicParsing="false" onAction="#addProductButtonClick" prefHeight="29.0" prefWidth="123.0" style="-fx-text-fill: black; -fx-border-color: gray;" text="Add Product" />
+            <TextField fx:id="productName" layoutX="218.0" layoutY="95.0" prefHeight="29.0" prefWidth="269.0" style="-fx-border-color: orange;" />
+            <Label fx:id="errorMessage" layoutX="374.0" layoutY="328.0" prefHeight="20.0" prefWidth="178.0" textFill="#549f12" />
+            <Label layoutX="43.0" layoutY="100.0" prefHeight="20.0" prefWidth="155.0" style="-fx-border-color: black;" text="Enter Product Name   :" />
+            <Label layoutX="43.0" layoutY="218.0" prefHeight="20.0" prefWidth="155.0" style="-fx-border-color: black;" text="Enter Product Quentity :" />
+            <Label layoutX="43.0" layoutY="159.0" prefHeight="20.0" prefWidth="155.0" style="-fx-border-color: black;" text="Enter Product Price      :" />
+            <Label layoutX="151.0" layoutY="27.0" prefHeight="39.0" prefWidth="281.0" style="-fx-background-color: orange; -fx-border-color: black;" text="                     Add  Product">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="94.0" layoutY="288.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: system; -fx-border-color: gray; -fx-text-fill: black;" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

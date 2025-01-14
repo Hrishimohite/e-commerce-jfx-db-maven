@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="437.0" prefWidth="600.0" style="-fx-background-color: #eae7e6; -fx-border-color: #da9412; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.choicescreen.ChoiceScreenController">
+   <children>
+      <Button fx:id="userManagement" layoutX="169.0" layoutY="169.0" mnemonicParsing="false" onAction="#userManagementButtonClick" prefHeight="32.0" prefWidth="244.0" style="-fx-background-color: orange; -fx-border-color: gray; -fx-text-fill: black;" text="User Management">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         </Button>
+      <Label fx:id="errorMessage" layoutX="384.0" layoutY="332.0" prefHeight="29.0" prefWidth="186.0" textFill="#d00a0a" />
+      <TextField layoutX="97.0" layoutY="96.0" prefHeight="39.0" prefWidth="406.0" style="-fx-background-color: system;" text="         What do you want to do today ?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="productManagement" layoutX="169.0" layoutY="237.0" mnemonicParsing="false" onAction="#productManagementButtonClick" prefHeight="32.0" prefWidth="244.0" style="-fx-background-color: orange; -fx-border-color: gray; -fx-text-fill: black;" text="Product Management">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="169.0" layoutY="305.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="32.0" prefWidth="244.0" style="-fx-background-color: orange; -fx-border-color: gray; -fx-text-fill: black;" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="105.0" layoutY="36.0" prefHeight="39.0" prefWidth="375.0" style="-fx-background-color: orange; -fx-border-color: black;" text="         Welcome to E-Commerce website">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

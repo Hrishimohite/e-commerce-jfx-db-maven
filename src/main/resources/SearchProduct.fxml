@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane   fx:controller="org.dnyanyog.searchproduct.SearchProductController" prefHeight="437.0" prefWidth="600.0" style="-fx-background-color: #eae7e6; -fx-border-color: #da9412; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="errorMessage" layoutX="282.0" layoutY="371.0" prefHeight="29.0" prefWidth="257.0" textFill="#d00a0a" />
+      <Button layoutX="190.0" layoutY="307.0" mnemonicParsing="false" onAction="#searchButtonClick" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: orange; -fx-border-color: black; -fx-text-fill: black;" text="Search" />
+      <Button fx:id="back" layoutX="353.0" layoutY="307.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: system; -fx-border-color: gray; -fx-text-fill: black;" text="Back" />
+      <Label layoutX="182.0" layoutY="42.0" prefHeight="39.0" prefWidth="281.0" style="-fx-background-color: orange; -fx-border-color: black;" text="                Search Product">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="193.0" prefHeight="25.0" prefWidth="281.0" text="Enter Product Name  to  Search    :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchProduct" layoutX="323.0" layoutY="191.0" prefHeight="29.0" prefWidth="225.0" />
+   </children>
+</AnchorPane>
